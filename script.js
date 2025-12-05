@@ -2,58 +2,58 @@
 const dances = [
     {
         id: 1,
-        name: 'Gta Amapiano',
-        thumbnail: 'https://via.placeholder.com/150/667eea/ffffff?text=Salsa',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        name: 'Gta',
+        thumbnail: 'thumbnails/Gta.png',
+        video: 'dances/Gta.mp4',
         position: { x: 25, y: 0 }
     },
     {
         id: 2,
         name: 'Cartier',
-        thumbnail: 'https://via.placeholder.com/150/764ba2/ffffff?text=Hip+Hop',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        thumbnail: 'thumbnails/Cartier.png',
+        video: 'dances/Cartier.mp4',
         position: { x: 325, y: 0 }
     },
     {
         id: 3,
         name: 'Y que fue',
-        thumbnail: 'https://via.placeholder.com/150/f093fb/ffffff?text=Contemporary',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        thumbnail: 'thumbnails/Y que fue.png',
+        video: 'dances/Y que fue.mp4',
         position: { x: 625, y: 0 }
     },
     {
         id: 4,
-        name: 'Nueavayol',
-        thumbnail: 'https://via.placeholder.com/150/4facfe/ffffff?text=Ballet',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        name: 'Nuevayol',
+        thumbnail: 'thumbnails/Nuevayol.png',
+        video: 'dances/Nuevayol.mp4',
         position: { x: 625, y: 200 }
     },
     {
         id: 5,
         name: 'Naghara',
-        thumbnail: 'https://via.placeholder.com/150/00f2fe/ffffff?text=Jazz',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        thumbnail: 'thumbnails/Naghara.png',
+        video: 'dances/Naghara.mp4',
         position: { x: 325, y: 200 }
     },
     {
         id: 6,
-        name: 'Dance 6',
-        thumbnail: 'https://via.placeholder.com/150/43e97b/ffffff?text=Dance+6',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        name: 'Jerusalema',
+        thumbnail: 'thumbnails/Jerusalema.png',
+        video: 'dances/Jerusalema.mp4',
         position: { x: 25, y: 200 }
     },
     {
         id: 7,
-        name: 'Dance 7',
-        thumbnail: 'https://via.placeholder.com/150/fa709a/ffffff?text=Dance+7',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        name: 'JuJu',
+        thumbnail: 'thumbnails/JuJu.png',
+        video: 'dances/Ju Ju On That Beat.mp4',
         position: { x: 25, y: 400 }
     },
     {
         id: 8,
-        name: 'Dance 8',
-        thumbnail: 'https://via.placeholder.com/150/fee140/ffffff?text=Dance+8',
-        video: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        name: 'Not Like Us',
+        thumbnail: 'thumbnails/Not Like Us.png',
+        video: 'dances/Not Like Us.mp4',
         position: { x: 325, y: 400 }
     }
 ];
@@ -93,7 +93,7 @@ function renderDanceCircles() {
         circleDiv.dataset.danceId = dance.id;
         
         circleDiv.innerHTML = `
-            <img src="${dance.thumbnail}" alt="${dance.name}">
+            <img src="${dance.thumbnail}">
             <div class="dance-label">${dance.name}</div>
         `;
         
